@@ -1,9 +1,9 @@
 <?php
 
-$cars = array("BMW", "VW", "AUDI", "TESLA")
+$cars = array("BMW", "VW", "AUDI", "TESLA");
 
 foreach($cars as $value){
-    echo "$value <br>"
+    echo "$value <br>";
 }
 
 ?>
