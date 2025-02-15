@@ -23,8 +23,4 @@ echo strlen($name); //numron sa e gat o fjala ne name
 echo str_word_count($name); //tregon sa fjal jon ne name
 echo strrev($name); //e kthen fjalen mbrapsht
 
-
-
-
-
 ?>
