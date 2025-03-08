@@ -3,7 +3,7 @@
 //$school = "Digital School";
 //$age = 15;
 
-//echo "I love $school"; permes $.. e thirr fjalin pa e shkru hiq
+//echo "I love $school"; permes $.. e thirr fjalin pa e pershkru prap 
 //echo "My age is $age";
 
 
