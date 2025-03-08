@@ -14,7 +14,7 @@ try{
     echo "Database created";
 }catch(Exception $e){
 
-    echo "Something went wrong";
+    echo "Something went wrong!";
 }
 
 //me qit code mujna veq ni database me kriju, nese e bojna refresh e qet smth went wrong, per me u kriju apet dueht mendrru emrin e saj n code
