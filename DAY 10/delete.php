@@ -2,8 +2,7 @@
 
 include_once("config.php");
 
-//$id = 1;caktohet cila id me u fshi
-$id = $_GET['id'];//cilen e klikojna fshihet
+$id = $_GET['id'];
 
 $sql = "DELETE FROM users WHERE id=:id";
 
