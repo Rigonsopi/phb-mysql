@@ -13,10 +13,20 @@
         $confirm_password = password_hash($tempConfirm, PASSWORD_DEFAULT);
 
         if(empty($emri) || empty($username) || empty($email) || empty($password) || empty($confirm_password)) {
-            echo "You have not filled in all the fields."
+            echo "You have not filled in all the fields.";
         }
+        else{
+            $sql = "INSERT INTO users (emri, username, email, password, confirm_password) values (:emri, :username, :email, :password, :confirm_password)";
 
+            $insertsql = $conn->bindeParam(':emri', $emri);
+            $insertsql = $conn->bindeParam(':username', $username);
+            $insertsql = $conn->bindeParam(':email', $email);
+            $insertsql = $conn->bindeParam(':password', $password);
+            $insertsql = $conn->bindeParam(':confirm_password', $confirm_password);
+
+            $insertsql->execute();
+
+            header("Location: login.php");
+        }
     }
-
-
 ?>
